@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPluguin = require('copy-webpack-plugin');
 
 module.exports = {
-  entry: './index.js',
+  entry: '/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'main.js'
@@ -27,7 +27,7 @@ module.exports = {
       {
         inject: true,
         template: './public/index.html',
-        filename: './index.html',
+        filename: '/index.html',
       }
     ),
     new CopyWebpackPluguin({
